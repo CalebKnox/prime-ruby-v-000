@@ -1,16 +1,12 @@
 
-
-# Add  code here!
 def prime?(integer)
-  if integer > 1
-    for num in 1..integer
-      if integer % num == 0 && num != 1 && num != integer
-        return false
-      elsif integer == num
-        return true
-      end
-    end
-  end
+  if integer <= 1
+    false
+  elsif integer <= 3
+    true
+  elsif integer % 2 == 0 || integer % 3 == 0
+    false
   else
-    return false
+    true
+    end
 end
